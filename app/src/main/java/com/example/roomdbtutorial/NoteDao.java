@@ -10,13 +10,13 @@ import java.util.List;
 @Dao
 public interface NoteDao {
 
-    @Query("SELECT * FROM note ORDER BY id DESC")
+    @Query("SELECT * FROM Note ORDER BY id DESC")
     List<Note> loadAll();
 
-    @Query("SELECT * FROM note WHERE id IN (:Ids)")
+    @Query("SELECT * FROM Note WHERE id IN (:Ids)")
     List<Note> loadByIds(int[] Ids);
 
-    @Query("SELECT * FROM note WHERE title LIKE :title LIMIT 1")
+    @Query("SELECT * FROM Note WHERE title LIKE :title LIMIT 1")
     Note findByTitle(String title);
 
 

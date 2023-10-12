@@ -13,8 +13,8 @@
         android:theme="@style/Theme.RoomDBTutorial"
         tools:targetApi="31">
         <activity
-            android:name=".NoteList"
-            android:exported="true">
+            android:name=".StartScreen"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,8 +22,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NewNote"
+            android:name=".NoteList"
             android:exported="false"/>
+        <activity
+            android:name=".NewNote"
+            android:exported="false" />
     </application>
 
 </manifest>
